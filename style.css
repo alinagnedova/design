@@ -503,3 +503,22 @@ a:focus-visible { outline: 3px solid #1a63ff; outline-offset: 4px; }
 .workflow-cta:hover { background:#dfe9ff; }
 @media(max-width:900px){ .workflow-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px){ .workflow-grid { grid-template-columns:1fr; margin-top:28px; gap:13px; } .workflow-card { padding:22px; } .workflow-number { margin-bottom:15px; } .workflow-card>p { margin-bottom:18px; } .workflow-bottom { flex-direction:column; align-items:stretch; gap:18px; } .workflow-cta { justify-content:center; } }
+
+/* Mobile navigation: full width and single-line labels */
+@media (max-width: 600px) {
+  .topbar { width: 100%; padding: 0; }
+  .nav {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 52px;
+    padding: 0 14px;
+    gap: 8px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+  }
+  .nav a { flex: 0 0 auto; white-space: nowrap; padding: 10px 0; }
+}
